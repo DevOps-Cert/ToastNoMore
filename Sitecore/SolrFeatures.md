@@ -2,7 +2,9 @@
 
 This document summarises Apache Solr (http://lucene.apache.org/solr) search features for the purposes of determining UX capabilities.
 
-Public Solr Servers: https://wiki.apache.org/solr/PublicServers
+###Public Solr Servers
+Public Solr Server List: https://wiki.apache.org/solr/PublicServers
+
 
 ###Solr search capabilities
 https://cwiki.apache.org/confluence/display/solr/Searching  
