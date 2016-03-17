@@ -2,7 +2,7 @@
 
 This document summarises Apache Solr (http://lucene.apache.org/solr) search features for the purposes of determining UX capabilities.
 
-###Public Solr Servers
+###Public Servers using Solr
 Public Solr Server List: https://wiki.apache.org/solr/PublicServers  
 Famous examples:
 * Instagram | http://instagr.am/ 
