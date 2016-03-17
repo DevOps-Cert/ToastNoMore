@@ -3,8 +3,11 @@
 This document summarises Apache Solr (http://lucene.apache.org/solr) search features for the purposes of determining UX capabilities.
 
 ###Public Solr Servers
-Public Solr Server List: https://wiki.apache.org/solr/PublicServers
+Public Solr Server List: https://wiki.apache.org/solr/PublicServers  
 
+Vanilla flavoured examples:
+* http://evolvingweb.github.io/ajax-solr/examples/reuters/
+* 
 
 ###Solr search capabilities
 https://cwiki.apache.org/confluence/display/solr/Searching  
@@ -13,7 +16,7 @@ https://cwiki.apache.org/confluence/display/solr/Searching
 * **Filter query**: Filter query runs a query against the entire index and caches the results
 * **Highlighting**: Multi-term highlighting showing selected search terms that will be displayed in colored boxes
 * **Faceting**: Faceting is the arrangement of search results into categories (which are based on indexed terms).
-* **Clustering**: (see: [http://search.carrot2.org](http://search.carrot2.org/stable/search?query=solr&results=100&source=web&algorithm=lingo&view=foamtree&skin=fancy-compact))Clustering groups search results by similarities discovered when a search is executed, rather than when content is indexed. 
+* **Clustering**: (see: [http://search.carrot2.org](http://search.carrot2.org/stable/search?query=solr&results=100&source=web&algorithm=lingo&view=foamtree&skin=fancy-compact)) Clustering groups search results by similarities discovered when a search is executed, rather than when content is indexed. 
 * **Reponse writer**: Generates a formatted response to the search (https://cwiki.apache.org/confluence/display/solr/Response+Writers)
 * **Relevance**: Relevance is the degree to which a query response satisfies a user who is searching for information.
 * **Spell checking**: The [SpellCheck component](https://cwiki.apache.org/confluence/display/solr/Spell+Checking) is designed to provide inline query suggestions based on other, similar, terms. The basis for these suggestions can be terms in a field in Solr, externally created text files, or fields in other Lucene indexes
@@ -33,6 +36,10 @@ https://cwiki.apache.org/confluence/display/solr/Searching
 
 ###Solr Clustering
 ![Carrot2Image](https://cwiki.apache.org/confluence/download/attachments/34836344/carrot2.png?version=1&modificationDate=1440417669000&api=v2)
+
+####Solr Grouping
+The grouping of the search term "DVD" groups search results into 3 categories 'TV & Video', 'Movies', 'Computers'  
+![GroupingImage](https://home.apache.org/~hossman/solr-meetup-20131007/slide-resources/bestbuy-grouping.jpg)
 ___
 
 ###Full-Text Search
