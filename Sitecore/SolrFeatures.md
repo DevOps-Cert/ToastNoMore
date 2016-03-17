@@ -43,6 +43,10 @@ https://cwiki.apache.org/confluence/display/solr/Searching
 The grouping of the search term "DVD" groups search results into 3 categories 'TV & Video', 'Movies', 'Computers'  
 ![GroupingImage](https://home.apache.org/~hossman/solr-meetup-20131007/slide-resources/bestbuy-grouping.jpg)
 ___
+   
+  
+#ROUGH CUT NOTES
+Rough cut notes have been placed here. This will be cleaned up later.
 
 ###Full-Text Search
 Phrases, wildcards, joins, grouping etc. across data types
