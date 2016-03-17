@@ -5,9 +5,11 @@ This document summarises Apache Solr (http://lucene.apache.org/solr) search feat
 ###Public Solr Servers
 Public Solr Server List: https://wiki.apache.org/solr/PublicServers  
 
-Vanilla flavoured examples:
+Some examples:
 * http://evolvingweb.github.io/ajax-solr/examples/reuters/
-* 
+* https://www.youtube.com/watch?v=0X1PHKuQ6eY : Facets
+* https://www.youtube.com/watch?v=aa5e_phA9Rc : MoreLikeThis
+* https://www.youtube.com/watch?v=fQMnc4DKQNc : Maps/Geolocation
 
 ###Solr search capabilities
 https://cwiki.apache.org/confluence/display/solr/Searching  
