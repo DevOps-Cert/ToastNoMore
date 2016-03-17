@@ -4,8 +4,16 @@ This document summarises Apache Solr (http://lucene.apache.org/solr) search feat
 
 ###Public Solr Servers
 Public Solr Server List: https://wiki.apache.org/solr/PublicServers  
+Famous examples:
+* Instagram | http://instagr.am/ 
+* eHarmony | http://www.eharmony.com/ 
+* The Guardian | http://www.theguardian.com/international
+* NASA | https://pds.jpl.nasa.gov/tools/data-search/
+* Disney | http://www.disney.com/
+* Goldman Sachs | http://www.goldmansachs.com/
+* Apple | http://www.disney.com/
 
-Some examples:
+Some usage examples:
 * http://evolvingweb.github.io/ajax-solr/examples/reuters/
 * https://www.youtube.com/watch?v=0X1PHKuQ6eY : Facets
 * https://www.youtube.com/watch?v=aa5e_phA9Rc : MoreLikeThis
