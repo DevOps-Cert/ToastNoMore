@@ -32,7 +32,8 @@ Sitecore itself has no hard limit on the number of items or the depth of the con
 http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2010/11/maximize-sitecore-content-editor-performance.aspx  
 The number of items under any parent item affects how quickly that parent unfolds. This also affects usability – think about trying to find a file in a folder with dozens of files. Try to limit the number of children per item to 25, and especially avoid items with more than 100 children.
 
-BucketTriggerCount https://doc.sitecore.net/sitecore_experience_platform/80/setting_up__maintaining/search_and_indexing/configuring_search_and_item_bucket_scalability 
+[Sitecore 8.0 Configuring Search and Item Bucket Scalability](https://doc.sitecore.net/sitecore_experience_platform/80/setting_up__maintaining/search_and_indexing/configuring_search_and_item_bucket_scalability)  
+BucketTriggerCountThis setting means that when an item has 100 children, Sitecore asks if you want to automatically convert this item into an item bucket.  
 
 http://blog.boro2g.co.uk/large-number-sitecore-items-per-folder/  
   Nested folders (after) Total: 341, Time to read: 639ms
