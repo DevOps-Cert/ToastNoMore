@@ -4,6 +4,8 @@
 To help understand and define an Item Bucket strategy for sitecore for an intranet portal site with a list of personal profile pages.
 
 ### Categorisations
+!IMPORTANT Buckets generate URLs. There maximum URL length is **2,083** characters in Internet Explorer https://support.microsoft.com/en-us/kb/208427  
+
 The 3 categorisation strategies used by default on Item Buckets are:
 * Creation date yyyy/MM/dd/HH/mm => **sitecore/content/2016/3/24/11/00**
 * ID and number of levels e.g. **{4fe63e93-d5d1-4128-80b8-283708713214: 4 levels} => sitecore/content/4/f/e/6/**
