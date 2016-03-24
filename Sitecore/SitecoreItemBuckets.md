@@ -11,7 +11,106 @@ The 3 categorisation strategies used by default on Item Buckets are:
 
 Alternatives strategies:
 * Web country codes: http://goes.gsfc.nasa.gov/text/web_country_codes.html
+* Unique email addresses
+* Autogroup into 100 items limit
 
+Tidy up URL example
+* Source: Alistair Deneys | https://adeneys.wordpress.com/2013/07/19/item-buckets-and-urls/
+```C#
+using System;
+using System.Linq;
+using Sitecore;
+using Sitecore.Buckets.Managers;
+using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.SearchTypes;
+using Sitecore.Pipelines.HttpRequest;
+
+namespace CustomBucketUrl
+{
+  public class CustomItemResolver : HttpRequestProcessor
+  {
+    public override void Process(HttpRequestArgs args)
+    {
+      if (Context.Item == null)
+      {
+        var requestUrl = args.Url.ItemPath;
+
+        // remove last element from path and see if resulting path is a bucket
+        var index = requestUrl.LastIndexOf('/');
+        if (index > 0)
+        {
+          var bucketPath = requestUrl.Substring(0, index);
+          var bucketItem = args.GetItem(bucketPath);
+
+          if (bucketItem != null && BucketManager.IsBucket(bucketItem))
+          {
+            var itemName = requestUrl.Substring(index + 1);
+
+            // locate item in bucket by name
+            using (var searchContext = ContentSearchManager.GetIndex(bucketItem as IIndexable).CreateSearchContext())
+            {
+              var result = searchContext.GetQueryable<SearchResultItem>().Where(x => x.Name == itemName).FirstOrDefault();
+              if(result != null)
+                Context.Item = result.GetItem();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+```C#
+using System;
+using Sitecore.Buckets.Managers;
+using Sitecore.Buckets.Extensions;
+using Sitecore.Links;
+using Sitecore.IO;
+
+namespace CustomBucketUrl
+{
+  public class CustomLinkManager : LinkProvider
+  {
+    public override string GetItemUrl(Sitecore.Data.Items.Item item,UrlOptions options)
+    {
+      if (BucketManager.IsItemContainedWithinBucket(item))
+      {
+        var bucketItem = item.GetParentBucketItemOrParent();
+        if (bucketItem != null && bucketItem.IsABucket())
+        {
+          var bucketUrl = base.GetItemUrl(bucketItem, options);
+          if (options.AddAspxExtension)
+            bucketUrl = bucketUrl.Replace(".aspx", string.Empty);
+
+            return FileUtil.MakePath(bucketUrl, item.Name) + (options.AddAspxExtension ? ".aspx" : string.Empty);
+        }
+      }
+
+      return base.GetItemUrl(item, options);
+    }
+  }
+}
+```
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <pipelines>
+      <httpRequestBegin>
+        <processor patch:after="processor[@type='Sitecore.Pipelines.HttpRequest.ItemResolver,Sitecore.Kernel']"type="CustomBucketUrl.CustomItemResolver, CustomBucketUrl" />
+      </httpRequestBegin>
+    </pipelines>
+    <linkManager>
+      <providers>
+        <add name="sitecore">
+          <patch:attribute name="type">CustomBucketUrl.CustomLinkManager, CustomBucketUrl</patch:attribute>
+        </add>
+      </providers>
+    </linkManager>
+  </sitecore>
+</configuration>
+```
 ### 100 Child Item Limit
 100 Child Items seems to be more a limit on rendering the content tree for content editors, but some sources report it does affect read performance.
 
