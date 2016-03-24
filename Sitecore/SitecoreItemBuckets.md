@@ -1,7 +1,7 @@
 #Item Buckets
 
 ### Scope
-To help understand and define an Item Bucket strategy for sitecore for an intranet portal site with a list of personal profile pages.
+To help understand and define an Item Bucket strategy for sitecore for an intranet portal site with a list of personal profile pages. Note a better way to probably handle this scenario is through the experience database xdb https://sitecore-community.github.io/docs/xDB/the-xdb-contact/  
 
 ### Categorisations
 !IMPORTANT Buckets generate URLs. There maximum URL length is **2,083** characters in Internet Explorer https://support.microsoft.com/en-us/kb/208427  
