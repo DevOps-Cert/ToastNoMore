@@ -14,7 +14,7 @@ Alternatives strategies:
 * Unique email addresses
 * Autogroup into 100 items limit
 
-Tidy up URL example
+Tidy-up URL example:
 * Source: Alistair Deneys | https://adeneys.wordpress.com/2013/07/19/item-buckets-and-urls/
 ```C#
 using System;
