@@ -12,8 +12,8 @@ The 3 categorisation strategies used by default on Item Buckets are:
 Alternatives strategies:
 * Web country codes: http://goes.gsfc.nasa.gov/text/web_country_codes.html
 
-### Child Item Limit
-100 Child Items  : Seems to be more a limit on rendering the content tree for content editors, but some sources report it does affect read performance.
+### 100 Child Item Limit
+100 Child Items seems to be more a limit on rendering the content tree for content editors, but some sources report it does affect read performance.
 
 http://www.sitecore.net/learn/blogs/best-practice-blogs/jeff-cram/posts/2013/03/under-the-hood-with-sitecore-7-at-the-new-england-sitecore-user-group.aspx 
 Rebuilt on .NET 4.5, Sitecore 7 features faster indexing capabilities and a new concept of Item Buckets. These buckets allow an item to contain nearly unlimited children and reorients end users to thinking about what an item is rather than where it’s located in the content tree. A welcome addition to the platform for developers who have been living within the best practice constraints of keeping children items in a node to under 100 items.
