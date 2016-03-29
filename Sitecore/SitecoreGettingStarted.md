@@ -1,7 +1,7 @@
 # Getting Started
 LaunchSitecore demo site        | http://www.launchsitecore.net/download  
 Sitecore Rocks                  | http://vsplugins.sitecore.net/   
-Sitecore developer site         | http://dev.sitecore.net  4
+Sitecore developer site         | http://dev.sitecore.net  
 Advanced MVC Sitecore           | https://www.youtube.com/watch?v=k3Gd1MW1WXI 
 
 ### Installation Checklist
