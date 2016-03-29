@@ -1,5 +1,7 @@
 # Getting Started
-http://www.launchsitecore.net/ | http://www.launchsitecore.net/download
+LaunchSitecore demo site        | http://www.launchsitecore.net/download  
+Sitecore Rocks                  | http://vsplugins.sitecore.net/   
+Sitecore developer site         | http://dev.sitecore.net  
 
 ### Installation Checklist
 
