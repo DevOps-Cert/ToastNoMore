@@ -1,4 +1,4 @@
-# Sitecore Archive/ Restore
+# Sitecore 8 Archive/ Restore
 
 ### Reference 
 https://doc.sitecore.net/sitecore_experience_platform/content_authoring/managing_items/general/archive_and_restore_an_item
