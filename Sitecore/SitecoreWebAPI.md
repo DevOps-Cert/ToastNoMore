@@ -7,5 +7,9 @@ Sitecore Item Web API | [Sitecore 6.5-6.6 Guide](https://sdn.sitecore.net/upload
 NodeJS | https://nodejs.org/en/   
 Visual Studio NodeJS Tools | https://www.visualstudio.com/en-us/features/node-js-vs.aspx  
 UnitJS | http://unitjs.com/  
+Bluebird | http://bluebirdjs.com/  
+  
+Note: Bluebird why promises? http://bluebirdjs.com/docs/why-promises.html  
+
  
 
