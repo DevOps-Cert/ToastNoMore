@@ -5,7 +5,11 @@
 https://ucwa.skype.com/about-ucwa  
 _Microsoft’s Unified Communications Web API (UCWA) is the Next Generation Platform for Mobile and Web Development. As such, we have created this website to service mobile and web developers. Our goal is to help you get familiar with Skype for Business’s latest API as you embark in the journey of embedding communications in any app!_   
 
-Interactive Web SDK: https://ucwa.skype.com/websdk#   
+Interactive UCWA Demo | https://ucwa.skype.com/login/explore  
+Interactive Web SDK | https://ucwa.skype.com/websdk#   
+
+Developer Video Intro | https://channel9.msdn.com/posts/Lync-Developer-Roundtable-UCWA-Overview   
+Developer Video Getting Started | https://channel9.msdn.com/posts/Lync-Developer-Roundtable-Getting-Started-with-UCWA
 
 ### Developing Web SDK applications for Skype for Business Online
 https://msdn.microsoft.com/en-us/library/office/mt622687(v=office.16).aspx  
@@ -31,3 +35,15 @@ https://msdn.microsoft.com/en-us/library/office/dn962160(v=office.16).aspx
 * Save and restore a snapshot of the Application state
 * Switch between video streams across conversations
 * Use the Skype Web Conversation Control in a webpage
+
+
+# UCWA Tasks
+### Dashboard
+*Get Presence
+*Set Presence
+*Reset Presence
+*Get Note
+*Set Note
+*Reset Note
+*Get Photo
+
