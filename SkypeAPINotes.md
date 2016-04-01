@@ -39,11 +39,7 @@ https://msdn.microsoft.com/en-us/library/office/dn962160(v=office.16).aspx
 
 # UCWA Tasks
 ### Dashboard
-*Get Presence
-*Set Presence
-*Reset Presence
-*Get Note
-*Set Note
-*Reset Note
-*Get Photo
+Get Presence | Set Presence | Reset Presence  
+Get Note | Set Note | Reset Note  
+Get Photo  
 
