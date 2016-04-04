@@ -44,3 +44,6 @@ Get Note | Set Note | Reset Note
 Get Photo  
 
 ![](images/SkypeUCWADemo2.png)
+
+### sendMessage
+![](images/SkypeUCWADemoSendMessages1.png)
