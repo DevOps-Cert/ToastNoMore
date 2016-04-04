@@ -43,3 +43,4 @@ Get Presence | Set Presence | Reset Presence
 Get Note | Set Note | Reset Note  
 Get Photo  
 
+![](images/SkypeUCWADemo2.png)
