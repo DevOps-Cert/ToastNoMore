@@ -4,6 +4,10 @@ Sitecore Rocks                  | http://vsplugins.sitecore.net/
 Sitecore developer site         | http://dev.sitecore.net  
 Advanced MVC Sitecore           | https://www.youtube.com/watch?v=k3Gd1MW1WXI  
 Documentation for Sitecore 8 Devs   | http://www.sitecore.net/learn/blogs/technical-blogs/john-west-sitecore-blog/posts/2015/06/documentation-for-sitecore-8-developers.aspx  
+Sitecore 7.5 and xDB Preview | https://www.youtube.com/watch?v=gWXxcZ9QKhU  
+
+### Sitecore Name Changes (Version 7.5)
+![](https://github.com/Toastbuster/Toastbuster/blob/master/Sitecore/images/SitecoreNameChanges.png)
 
 ### Installation Checklist
 
