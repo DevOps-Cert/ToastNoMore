@@ -54,6 +54,21 @@ The formatting can be changed, but the [UCWA Demo](https://ucwa.skype.com/login/
 
 ![](images/SkypeUCWADemo2.png)
 
-### Two Party and Multi-Party IM (sendMessage)
+### Integrating Skype Instant Messaging (Open Client Application)
+
+Lync Command Line Parameters | https://technet.microsoft.com/en-us/library/gg398376(v=ocs.15).aspx
+#### Example
+```html
+<html>
+	<body>
+		<a href="sip:email@gmail.com">Open "Skype for Business"</a>
+	</body>
+</html>
+```
+#### More info  
+HKEY_CLASSES_ROOT Key | https://msdn.microsoft.com/en-us/library/windows/desktop/ms724475(v=vs.85).aspx  
+URL Monikers | https://msdn.microsoft.com/en-us/library/ms775149(v=vs.85).aspx  
+ 
+### Embedding - Two Party and Multi-Party IM (sendMessage)
 The example from the [UCWA Demo](https://ucwa.skype.com/login/explore) showing Two Party IM
 ![](images/SkypeUCWADemoSendMessages1.png)
