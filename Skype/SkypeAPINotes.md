@@ -68,6 +68,7 @@ Lync Command Line Parameters | https://technet.microsoft.com/en-us/library/gg398
 #### More info  
 HKEY_CLASSES_ROOT Key | https://msdn.microsoft.com/en-us/library/windows/desktop/ms724475(v=vs.85).aspx  
 URL Monikers | https://msdn.microsoft.com/en-us/library/ms775149(v=vs.85).aspx  
+HowTo Outlook IM links | http://www.howto-outlook.com/howto/messaginglinks.htm  
  
 ### Embedding - Two Party and Multi-Party IM (sendMessage)
 The example from the [UCWA Demo](https://ucwa.skype.com/login/explore) showing Two Party IM
