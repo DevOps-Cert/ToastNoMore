@@ -7,4 +7,4 @@
 4. Similar Volatility
 5. If the entity you are considering embedding is not a key entity
 
-- Data Modeling for MongoDB (2014), Steve Hoberman, Technics Publications
+Reference: Data Modeling for MongoDB (2014), Steve Hoberman, Technics Publications
