@@ -1,4 +1,4 @@
-# Microsoft Azure Gettign Started
+# Microsoft Azure Getting Started
 
 Azure Price Calculator | https://azure.microsoft.com/en-us/pricing/calculator/  
 Azure Documentation | https://azure.microsoft.com/en-us/documentation/  
