@@ -5,7 +5,7 @@
         :\>get-help Serialize-Item 
         :\>get-help Export-Item
         
-        By default, this will export serialized .item files to the host directory :\inetpub\wwwroot\SitecoreInstance\Data\serialization
+        By default, this will export serialized .item files to the host directory :\inetpub\wwwroot\SitecoreInstance\Data\serialization\
         
     Requires: Sitecore Powershell Extensions: https://marketplace.sitecore.net/en/Modules/Sitecore_PowerShell_console.aspx
     
