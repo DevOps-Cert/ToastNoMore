@@ -61,8 +61,8 @@ function SerializeSitecore ($isSerialize, $treeNode)
 [string[]] $sites = 
     "master:\content\Home", 
     "master:\content\Global", 
-    "master:\content\Developing-in-Sitecore"
-	"master:\content\DoesNotExist"
+    "master:\content\Developing-in-Sitecore",
+    "master:\content\DoesNotExist"
 
 SerializeSitecore $isSerialize_Sites $sites
 
