@@ -15,6 +15,26 @@
 [bool] $isSerialize_Layouts = $false
 [bool] $isSerialize_Templates = $false
 
+# Serialize Sites 
+#-------------------------------------------------------------------------------------------------
+[string[]] $sites = 
+    "master:\content\Home", 
+    "master:\content\Global", 
+    "master:\content\Developing-in-Sitecore",
+    "master:\content\DoesNotExist"
+    
+# Serialize Layouts
+#-------------------------------------------------------------------------------------------------
+[string[]] $layouts = 
+    "master:\layout\layouts", 
+    "master:\layout\renderings",
+    "master:\layout\sublayouts"
+    
+# Serialize Templates
+#-------------------------------------------------------------------------------------------------
+[string[]] $templates = 
+    "master:\Templates\Common"
+
 
 # SerializeSitecore
 #-------------------------------------------------------------------------------------------------
@@ -56,30 +76,11 @@ function SerializeSitecore ($isSerialize, $treeNode)
     }
 }#:~
 
-# Serialize Sites 
-#-------------------------------------------------------------------------------------------------
-[string[]] $sites = 
-    "master:\content\Home", 
-    "master:\content\Global", 
-    "master:\content\Developing-in-Sitecore",
-    "master:\content\DoesNotExist"
 
+# Invoke Serialization 
+#-------------------------------------------------------------------------------------------------
 SerializeSitecore $isSerialize_Sites $sites
-
-# Serialize Layouts
-#-------------------------------------------------------------------------------------------------
-[string[]] $layouts = 
-    "master:\layout\layouts", 
-    "master:\layout\renderings",
-    "master:\layout\sublayouts"
-    
 SerializeSitecore $isSerialize_Layouts $layouts
-
-# Serialize Templates
-#-------------------------------------------------------------------------------------------------
-[string[]] $templates = 
-    "master:\Templates\Common"
-
 SerializeSitecore $isSerialize_Templates $templates
 
 
