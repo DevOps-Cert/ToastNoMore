@@ -75,11 +75,11 @@ function SerializeSitecore ($treeNode)
 
 # Invoke Serialization 
 #-------------------------------------------------------------------------------------------------
-$tuple = [System.Tuple]::Create($isSerialize_Sites, $sites),
-         [System.Tuple]::Create($isSerialize_Layouts, $layouts),
-         [System.Tuple]::Create($isSerialize_Templates, $templates)
+$tuples = [System.Tuple]::Create($isSerialize_Sites, $sites),
+          [System.Tuple]::Create($isSerialize_Layouts, $layouts),
+          [System.Tuple]::Create($isSerialize_Templates, $templates)
 
-foreach ($t in $tuple) {
+foreach ($t in $tuples) {
     $isSerialize = $t.item1
     $nodes = $t.item2
     
