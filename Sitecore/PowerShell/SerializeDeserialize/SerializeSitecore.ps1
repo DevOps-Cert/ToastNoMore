@@ -38,12 +38,8 @@
 
 # SerializeSitecore
 #-------------------------------------------------------------------------------------------------
-function SerializeSitecore ($isSerialize, $treeNode)
+function SerializeSitecore ($treeNode)
 {
-    if ($isSerialize -ne $true)  {
-        return;
-    }
-    
     foreach($node in $treeNode) {
         $item = Get-Item $node -ErrorAction SilentlyContinue 
     
@@ -79,8 +75,20 @@ function SerializeSitecore ($isSerialize, $treeNode)
 
 # Invoke Serialization 
 #-------------------------------------------------------------------------------------------------
-SerializeSitecore $isSerialize_Sites $sites
-SerializeSitecore $isSerialize_Layouts $layouts
-SerializeSitecore $isSerialize_Templates $templates
+$tuple = [System.Tuple]::Create($isSerialize_Sites, $sites),
+         [System.Tuple]::Create($isSerialize_Layouts, $layouts),
+         [System.Tuple]::Create($isSerialize_Templates, $templates)
+
+foreach ($t in $tuple) {
+    $isSerialize = $t.item1
+    $nodes = $t.item2
+    
+    if ($isSerialize)  {
+        SerializeSitecore $nodes
+    }
+}
+
+
+
 
 
