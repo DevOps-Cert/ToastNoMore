@@ -38,9 +38,9 @@
 
 # SerializeSitecore
 #-------------------------------------------------------------------------------------------------
-function SerializeSitecore ($treeNode)
+function SerializeSitecore ($treeNodes)
 {
-    foreach($node in $treeNode) {
+    foreach($node in $treeNodes) {
         $item = Get-Item $node -ErrorAction SilentlyContinue 
     
         if ($item.Length -ne 0) {
