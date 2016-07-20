@@ -4,11 +4,10 @@
     Author: mark.a.taylor@gmail.com
 #>
 
-# Tuples are in the format:
-# [tuple]::Create($source, "zip", $destination)
+# HOWTO: Add directories for file zip archiving or deletion using the $filePaths Tuples.
 #
-# If no destination is specified, then the destination is the same folder/ directory as the $source.
-#
+#     Tuples are in the format: [tuple]::Create($source, "zip", $destination)
+#     If no destination is specified, then the destination is the same folder/ directory as the $source.
 #
 # Specify directorys and whether to "zip", "delete", "zipdelete" them e.g.
 #
@@ -43,14 +42,14 @@ function CreateZip ($source, $destination) {
         Get-ChildItem $source.FullName -Recurse | where {$_.FullName -notmatch "\.zip"} | Copy-Item -Destination {Join-Path $tmpDirectory.FullName $_.FullName.Substring($source.FullName.Length)}
 
         #*- 
-		Write-Host ("Compressing directory:'{0}', to zip archive:'{1}'" -f $source, $zipFile.FullName)
+	Write-Host ("Compressing directory:'{0}', to zip archive:'{1}'" -f $source, $zipFile.FullName)
         #-*
 			        
-		Add-Type -assembly "system.io.compression.filesystem"
+	Add-Type -assembly "system.io.compression.filesystem"
         [io.compression.zipfile]::CreateFromDirectory($tmpDirectory.FullName, $zipFile.FullName)
 
         #*- 
-		Write-Host "Archive creation complete." -ForegroundColor Yellow 
+	Write-Host "Archive creation complete." -ForegroundColor Yellow 
         #-*
     }
     finally {
@@ -70,13 +69,13 @@ function DeleteFiles ($source, $isIncludeZipFiles) {
     }
     else {
         #*- 
-		Write-Host ("Deleting files in source path, excluding .zip files:'{0}'" -f $source)
+	Write-Host ("Deleting files in source path, excluding .zip files:'{0}'" -f $source)
         #-*
 
         Remove-Item -Path $source.FullName -Recurse -Exclude "*.zip"
         
         #*- 
-		Write-Host "File deletion complete" -ForegroundColor Yellow
+	Write-Host "File deletion complete" -ForegroundColor Yellow
         #-*
     }
 }
