@@ -24,7 +24,7 @@
 # NOTE: zipdelete = zip + delete. These operations are equivalent.
 #-------------------------------------------------------------------------------------------------
 $filePaths = 
-	[tuple]::Create("C:\inetpub\wwwroot\Sitecore\Data\logs", "zip"),
+    [tuple]::Create("C:\inetpub\wwwroot\Sitecore\Data\logs", "zip"),
     #[tuple]::Create("C:\inetpub\wwwroot\Sitecore\Data\logs", "zipdelete"),
     [tuple]::Create("C:\inetpub\wwwroot\Sitecore\Data\logs", "delete")
 
