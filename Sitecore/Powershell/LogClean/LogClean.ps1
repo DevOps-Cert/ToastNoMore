@@ -126,17 +126,17 @@ function LogClean ($tuples) {
 
                 # Process Zip Files
                 #-------------------------------------------------------------------------------------------------
-		        if($isZip) {
+		if($isZip) {
                     CreateZip $source $destination
-		        }
+		}
 
                 # Process ZipDelete Files
                 # Zip files, then delete everything except the zip files. Equivalent to running Zip then Delete.
                 #-------------------------------------------------------------------------------------------------
-		        if($isZipDelete) {
+		if($isZipDelete) {
                     CreateZip $source $destination
                     DeleteFiles $source $false
-		        }
+		}
 
                 # Process Delete Files
                 #-------------------------------------------------------------------------------------------------
