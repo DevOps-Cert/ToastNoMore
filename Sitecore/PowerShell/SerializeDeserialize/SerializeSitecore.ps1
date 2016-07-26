@@ -9,7 +9,7 @@
         
     Requires: Sitecore Powershell Extensions: https://marketplace.sitecore.net/en/Modules/Sitecore_PowerShell_console.aspx
     
-    Author: Mark Taylor (mark.a.taylor@gmail.com) https://github.com/Toastbuster
+    Author: Mark Taylor https://github.com/Toastbuster
 #>
 [bool] $isSerialize_Sites = $true
 [bool] $isSerialize_Layouts = $false
