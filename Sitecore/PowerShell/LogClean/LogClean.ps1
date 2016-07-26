@@ -1,7 +1,7 @@
 <#
     Zip or Remove Log files from a specified folder location 
     
-    Author: mark.a.taylor@gmail.com
+    Author: Mark Taylor https://github.com/Toastbuster
 #>
 
 # HOWTO: Add directories for file zip archiving or deletion using the $filePaths Tuples.
