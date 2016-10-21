@@ -9,7 +9,7 @@
         
     Requires: Sitecore Powershell Extensions: https://marketplace.sitecore.net/en/Modules/Sitecore_PowerShell_console.aspx
     
-	Author: mark.a.taylor@gmail.com
+    Author: Mark Taylor https://github.com/Toastbuster
 #>
 
 function Get-DefaultSerilizationFolder
