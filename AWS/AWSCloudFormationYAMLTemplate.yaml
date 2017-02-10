@@ -47,7 +47,7 @@ Description:
     
 Metadata:
     # OPTIONAL TEMPLATE METADATA
-    # Objects that provide additional information about the template
+    # Objects that provide additional information about the templates
     
 Parameters:
     #OPTIONAL SET OF PARAMETERS
@@ -79,6 +79,21 @@ Resources:
     # Specifies the stack resources and their properties, such as an Amazon Elastic Compute Cloud 
     # instance or an Amazon Simple Storage Service bucket. You can refer to resources in the 
     # Resources and Outputs sections of the template.
+    
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html
+    # EC2:
+    #     Type: "AWS::EC2::Instance"
+    #     Properties:
+    #     Metadata:
+    #         AWS::CloudFormation::Init:
+    #             config:
+    #                 packages:
+    #                 groups:
+    #                 users:
+    #                 sources:
+    #                 files:
+    #                 commands:
+    #                 services:
     
 Outputs:
     # OPTIONAL SET OF OUTPUTS
