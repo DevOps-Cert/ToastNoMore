@@ -1,0 +1,89 @@
+#@Filename    : AWSCloudFormationYAMLTemplate.yaml
+#@Description : Basic AWS CloudFormation YAML Template with comments from the AWS documentation.
+#@Version     : 0.1
+#@CreatedBy   : Mark Taylor <https://github.com/Toastbuster>
+#@CreatedOn   : 9th February 2017
+#@ModifiedBy  : Mark Taylor <https://github.com/Toastbuster>
+#@ModifiedOn  : 9th February 2017
+#@Tags        : #CloudFormation #YAMLTemplate
+
+#@License     : MIT License
+#
+#               Copyright (c) 2017 Mark Taylor <https://github.com/Toastbuster>
+#
+#               Permission is hereby granted, free of charge, to any person obtaining a copy
+#               of this software and associated documentation files (the "Software"), to deal
+#               in the Software without restriction, including without limitation the rights
+#               to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#               copies of the Software, and to permit persons to whom the Software is
+#               furnished to do so, subject to the following conditions:
+#               
+#               The above copyright notice and this permission notice shall be included in all
+#               copies or substantial portions of the Software.
+#               
+#               THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#               IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#               FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#               AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#               LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#               OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#               SOFTWARE.
+#               
+#               https://choosealicense.com/
+
+
+AWSTemplateFormatVersion: "version date"
+# http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html 
+
+# OPTIONAL
+# Specifies the AWS CloudFormation template version that the template conforms to. The template
+# format version is not the same as the API or WSDL version. The template format version can
+# change independently of the API and WSDL versions.
+
+Description:
+    # OPTIONAL STRING
+    # A text string that describes the template. This section must always follow the template 
+    # format version section.
+    
+Metadata:
+    # OPTIONAL TEMPLATE METADATA
+    # Objects that provide additional information about the template
+    
+Parameters:
+    #OPTIONAL SET OF PARAMETERS
+    # Specifies values that you can pass in to your template at runtime (when you create or update a
+    # stack). You can refer to parameters in the Resources and Outputs sections of the template
+    
+Mappings:
+    # OPTIONAL SET OF MAPPINGS
+    # A mapping of keys and associated values that you can use to specify conditional parameter 
+    # values, similar to a lookup table. You can match a key to a corresponding value by using the 
+    # Fn::FindInMap intrinsic function in the Resources and Outputs section.
+    
+Conditions:
+    # OPTIONAL SET OF CONDITIONS
+    # Defines conditions that control whether certain resources are created or whether certain 
+    # resource properties are assigned a value during stack creation or update. For example, you 
+    # could conditionally create a resource that depends on whether the stack is for a production 
+    # or test environment.
+    
+Transform:
+    # OPTIONAL SET OF TRANSFORMS
+    # For serverless applications (also referred to as Lambda-based applications), specifies the 
+    # version of the AWS Serverless Application Model (AWS SAM) to use. When you specify a 
+    # transform, you can use AWS SAM syntax to declare resources in your template. The model 
+    # defines the syntax that you can use and how it is processed.
+    
+Resources:
+    # REQUIRED SET OF RESOURCES
+    # Specifies the stack resources and their properties, such as an Amazon Elastic Compute Cloud 
+    # instance or an Amazon Simple Storage Service bucket. You can refer to resources in the 
+    # Resources and Outputs sections of the template.
+    
+Outputs:
+    # OPTIONAL SET OF OUTPUTS
+    # Describes the values that are returned whenever you view your stack's properties. For example, 
+    # you can declare an output for an Amazon S3 bucket name and then call the aws cloudformation 
+    # describe-stacks AWS CLI command to view the name.
+    
+    
