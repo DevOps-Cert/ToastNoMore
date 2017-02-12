@@ -100,7 +100,9 @@ Resources:
     #                         test:
     #                         ignoreErrors:
     #                         waitAfterCompletion:
-    #                 services:
+    #                 services: # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html#aws-resource-init-services
+    #                     sysvinit:
+    #                     windows:
     
 Outputs:
     # OPTIONAL SET OF OUTPUTS
