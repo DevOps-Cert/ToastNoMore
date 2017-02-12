@@ -92,7 +92,14 @@ Resources:
     #                 users:
     #                 sources:
     #                 files:
-    #                 commands:
+    #                 commands: # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html#aws-resource-init-commands
+    #                     commandName:
+    #                         command:
+    #                         env:
+    #                         cwd:
+    #                         test:
+    #                         ignoreErrors:
+    #                         waitAfterCompletion:
     #                 services:
     
 Outputs:
